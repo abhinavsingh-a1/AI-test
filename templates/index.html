@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>CraftWorks</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body style="background: #e0e0e6;">
+ <div>
+	<h1>CraftWorks</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post">
+    	<label>senson_01</label><input type="text" name="sensor_01" value="2"/><br />
+    	<label>senson_02</label><input type="text" name="sensor_02" value="4"/><br />
+    	<label>senson_03</label><input type="text" name="sensor_03" value="4"/><br />
+    	<label>senson_04</label><input type="text" name="sensor_04" value="4"/><br />
+    	<label>senson_05</label><input type="text" name="sensor_05" value="4"/><br />
+    	<label>senson_06</label><input type="text" name="sensor_06" value="4"/><br />
+    	<label>senson_07</label><input type="text" name="sensor_07" value="4"/><br />
+    	<label>senson_08</label><input type="text" name="sensor_08" value="4"/><br />
+    	<label>senson_09</label><input type="text" name="sensor_09" value="4"/><br />
+    	<label>senson_10</label><input type="text" name="sensor_10" value="4"/><br />
+    	<label>senson_11</label><input type="text" name="sensor_11" value="4"/><br />
+    	<label>senson_12</label><input type="text" name="sensor_12" value="4"/><br />
+    	<label>senson_13</label><input type="text" name="sensor_13" value="4"/><br />
+    	<label>senson_14</label><input type="text" name="sensor_14" value="4"/><br />
+    	<label>senson_15</label><input type="text" name="sensor_15" value="4"/><br />
+    	<label>senson_16</label><input type="text" name="sensor_16" value="4"/><br />
+    	<label>senson_17</label><input type="text" name="sensor_17" value="4"/><br />
+    	<label>senson_18</label><input type="text" name="sensor_18" value="4"/><br />
+    	<label>senson_19</label><input type="text" name="sensor_19" value="4"/><br />
+    	<label>senson_20</label><input type="text" name="sensor_20" value="4"/><br />
+    	<label>senson_21</label><input type="text" name="sensor_21" value="4"/><br />
+    	<label>senson_22</label><input type="text" name="sensor_22" value="4"/><br />
+    	<label>senson_23</label><input type="text" name="sensor_23" value="4"/><br />
+    	<label>senson_24</label><input type="text" name="sensor_24" value="4"/><br />
+    	<label>senson_25</label><input type="text" name="sensor_25" value="4"/><br />
+    	<label>senson_26</label><input type="text" name="sensor_26" value="4"/><br />
+    	<label>senson_27</label><input type="text" name="sensor_27" value="4"/><br />
+    	<label>senson_28</label><input type="text" name="sensor_28" value="4"/><br />
+    	<label>senson_29</label><input type="text" name="sensor_29" value="4"/><br />
+    	<label>senson_30</label><input type="text" name="sensor_30" value="4"/><br />
+    	<label>senson_31</label><input type="text" name="sensor_31" value="4"/><br />
+    	<label>senson_32</label><input type="text" name="sensor_32" value="4"/><br />
+    	<label>senson_33</label><input type="text" name="sensor_33" value="4"/><br />
+    	<label>senson_34</label><input type="text" name="sensor_34" value="4"/><br />
+    	<label>senson_35</label><input type="text" name="sensor_35" value="4"/><br />
+    	<label>senson_36</label><input type="text" name="sensor_36" value="4"/><br />
+    	<label>senson_37</label><input type="text" name="sensor_37" value="4"/><br />
+    	<label>senson_38</label><input type="text" name="sensor_38" value="4"/><br />
+    	<label>senson_39</label><input type="text" name="sensor_39" value="4"/><br />
+    	<label>senson_40</label><input type="text" name="sensor_40" value="4"/><br />
+    	<label>senson_41</label><input type="text" name="sensor_41" value="4"/><br />
+    	<label>senson_42</label><input type="text" name="sensor_42" value="4"/><br />
+    	<label>senson_43</label><input type="text" name="sensor_43" value="4"/><br />
+    	<label>senson_44</label><input type="text" name="sensor_44" value="4"/><br />
+    	<label>senson_45</label><input type="text" name="sensor_45" value="4"/><br />
+    	<label>senson_46</label><input type="text" name="sensor_46" value="4"/><br />
+    	<label>senson_47</label><input type="text" name="sensor_47" value="4"/><br />
+    	<label>senson_48</label><input type="text" name="sensor_48" value="4"/><br />
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict Status</button>
+
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
